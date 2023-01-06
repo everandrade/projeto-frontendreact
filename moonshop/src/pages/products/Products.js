@@ -37,7 +37,7 @@ const Products = () => {
     const searchProduct = useMemo(() => {
         const lowerSearch = search.toLowerCase()
         return products.filter((product) => product.title.toLowerCase().includes(lowerSearch))
-    })
+    }, [products, search])
 
     return (
         <div>

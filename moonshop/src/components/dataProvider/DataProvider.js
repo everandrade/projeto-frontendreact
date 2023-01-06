@@ -162,7 +162,7 @@ export const DataProvider = (props) => {
 
     useEffect(() => {
         const dataCart = JSON.parse(window.localStorage.getItem('dataCart'))
-        if (dataCart !== 0 && dataCart.length === 0) 
+        if (dataCart !== 0 && dataCart?.length === 0) 
         setCart(dataCart)
     }, [setCart])
 
